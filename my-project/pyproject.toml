@@ -1,0 +1,24 @@
+[project]
+name = "my-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Батр Эрднеев",email = "erdneevb@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "my_project", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
